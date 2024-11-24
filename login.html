@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            background-image: linear-gradient(45deg, rgb(146, 206, 159), rgb(168, 150, 167));
+        }
+        div {
+            background-color: rgba(0, 0, 0, 0.9);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 80px;
+            border-radius: 15px;
+            color: #fff;
+        }
+        input {
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        button {
+            background-color: rgb(183, 184, 185);
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+        }
+        button:hover {
+            background-color: rgb(87, 88, 88);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Login</h1>
+        <form id="loginForm">
+            <input type="text" id="email" placeholder="E-mail" required />
+            <br />
+            <input type="password" id="senha" placeholder="Senha" required />
+            <br />
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
